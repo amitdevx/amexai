@@ -3,5 +3,5 @@ services:
     name: amex-agent
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python agent.py
+    startCommand: python agent.py start
    
