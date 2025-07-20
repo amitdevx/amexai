@@ -1,0 +1,24 @@
+services:
+  - type: background
+    name: amex-agent
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python agent.py
+    envVars:
+      - key: LIVEKIT_URL
+        value: wss://voice-ai-agent-oqcpw5kj.livekit.cloud
+
+      - key: LIVEKIT_API_KEY
+        value: APIKh3C9dN96NjQ
+
+      - key: LIVEKIT_API_SECRET
+        value: ioseQ3OwCFEeNWRQ9mi3Vo5uOpA3tZJljzCbP8kThwc
+
+      - key: GOOGLE_API_KEY
+        value: AIzaSyCSMDehQZ-HbudeQgLJKlIXIDx7TG8btSw
+
+      - key: GMAIL_USER
+        value: hi.amitdev.in@gmail.com
+
+      - key: GMAIL_APP_PASSWORD
+        value: ywjkzzqptnpsilvj
